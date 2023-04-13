@@ -1,0 +1,8 @@
+<h1>CALCULADORA</h1>
+<label > OPERADOR 1:</label><input type="number" name="n1" [(ngModel)]="numero1"><br>
+<label > OPERADOR 2:</label><input type="number" name="n2" [(ngModel)]="numero2"><br>
+<p>RESULTADO</p><p>{{mensaje}}</p><br>
+<input type="button" name="suma" value="suma" (click)="suma()">
+<input type="button" name="resta" value="resta" (click)="resta()"><br>
+<input type="button" name="multiplicacion" value="multiplicacion" (click)="multiplicacion()">
+<input type="button" name="division" value="division" (click)="division()">

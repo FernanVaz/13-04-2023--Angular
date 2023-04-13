@@ -1,0 +1,50 @@
+<h1>Datos de compra</h1>
+<table>
+  <tr>
+    <td><label>Correo electronico: </label></td>
+    <td><input type="email" name="correo" id="correo" placeholder="juan@dominio.com" [(ngModel)]="correo"></td>
+  </tr>
+  <tr>
+    <td><label>Direccion: </label></td>
+    <td><textarea name="Direccion" id="" cols="30" rows="10" placeholder="C/Embajadores nº5" [(ngModel)]="direccion"></textarea></td>
+  </tr>
+  <tr>
+    <td><label>Telefono</label> </td>
+    <td><input type="number" name="telefono" id="telefono" placeholder="6123123123" [(ngModel)]="telefono"></td>
+  </tr>
+  <tr>
+    <td class="topp"><label>comunidad</label> </td>
+    <td>
+      <select name="comunidades" id="" [(ngModel)]="comunidad">
+        <option value="MADRID">MADRID</option>
+        <option value="MURCIA">MURCIA</option>
+        <option value="VALENCIA">VALENCIA</option>
+        <option value="GALICIA">GALICIA</option>
+        <option value="ASTURIAS">ASTURIAS</option>
+        <option value="PAIS VASCO">PAIS VASCO</option>
+        <option value="CATALUÑA">CATALUÑA</option>
+        <option value="ANDALUCIA">ANDALUCIA</option>
+        <option value="EXTREMADURA">EXTREMADURA</option>
+      </select></td>
+  </tr>
+  <tr>
+    <td><label>Formas de pago:</label><br></td>
+    <td>
+      <input type="radio" name="pago" id="Efectivo" value="Efectivo" [(ngModel)]="pago"><label>Efectivo</label>
+      <input type="radio" name="pago" id="Tarjeta" value="Tarjeta" [(ngModel)]="pago"><label>Tarjeta</label>
+      <input type="radio" name="pago" id="Contra-rembolso" value="Contra-rembolso" [(ngModel)]="pago"><label>Contra-rembolso</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="checkbox" name="add" id="add" [(ngModel)]="check"><label>Acepta recibir informacion de nuestros productos</label></td>
+  </tr>
+  <tr>
+    <td><input type="submit" value="enviar" (click)="enviar()"></td>
+  </tr>
+</table>
+<p>{{correo}}</p>
+<p>{{direccion}}</p>
+<p>{{telefono}}</p>
+<p>{{pago}}</p>
+<p>{{comunidad}}</p>
+<p>{{check}}</p>

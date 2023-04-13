@@ -1,0 +1,10 @@
+<h1>CAMBIO DE MONEDA</h1>
+<label > OPERADOR 1:</label><input type="number" name="n1" [(ngModel)]="numero1"><br>
+<select [(ngModel)]="moneda">
+  <option value="YEN" >YEN</option>
+  <option value="DOLAR-EEUU">DOLAR-EEUU</option>
+  <option value="DOLAR-CA">DOLAR-CA</option>
+  <option value="PESO MEX">PESO MEX</option>
+</select><BR>
+<input type="button" (click)="calcular()" value="CAMBIAR">
+<p>RESULTADO</p><p>{{mensaje}}</p><br>
